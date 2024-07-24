@@ -13,7 +13,8 @@ function PointsPopup({data,setToggle2,value}) {
         {
           console.log(value?._id)
             try{
-                const response=await axios.put(`https://shivaay-shakti-backend-1.onrender.com/api/purchase/points/${value?._id}`,
+                // const response=await axios.put(`https://shivaay-shakti-backend-1.onrender.com/api/purchase/points/${value?._id}`,
+                const response=await axios.put(`http://localhost:5000/api/purchase/points/${value?._id}`,
                 {date1:"2024-01-13",point:parseInt(data?.point)},{ headers:{
                   Authorization:localStorage.getItem('jwt')
                 }});
