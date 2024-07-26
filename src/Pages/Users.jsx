@@ -17,7 +17,7 @@ function Users() {
     try {
       // const response=await axios.get("https://shivaay-shakti-backend-1.onrender.com/api/purchase/trainer",{ headers:{
       const response = await axios.get(
-        "http://localhost:5000/api/purchase/trainer",
+        "https://shivaay-shakti-backend-vm3k.onrender.com/api/purchase/trainer",
         {
           headers: {
             Authorization: localStorage.getItem("jwt"),

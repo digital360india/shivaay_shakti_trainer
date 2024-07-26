@@ -15,7 +15,7 @@ function Login({ logged, setLogged }) {
       try {
         // const res=await axios.post("https://shivaay-shakti-backend-1.onrender.com/api/auth/trainerlogin",data);
         const res = await axios.post(
-          "http://localhost:5000/api/auth/trainerlogin",
+          "https://shivaay-shakti-backend-vm3k.onrender.com/api/auth/trainerlogin",
           data
         );
         if (res.status === 200) {
